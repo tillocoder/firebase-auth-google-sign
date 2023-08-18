@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "105626996716",
+    "project_id": "fir-aniq-logic-example",
+    "storage_bucket": "fir-aniq-logic-example.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:105626996716:android:5c2b75a91db5fbe78bfac9",
+        "android_client_info": {
+          "package_name": "com.example.example_firebase_logical"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "105626996716-aalu6ufiu0bqqsi7vj9kptmcqgqlf1n9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_nMChLm4TQzTRiaArYaegE2mjJqHLjSE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "105626996716-aalu6ufiu0bqqsi7vj9kptmcqgqlf1n9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
