@@ -2,8 +2,9 @@ import 'package:example_firebase_logical/Screens/Auth/LogInPage/bloc/login_bloc.
 import 'package:example_firebase_logical/Screens/Auth/SignUpPage/bloc/signup_bloc.dart';
 import 'package:example_firebase_logical/Screens/Auth/SignUpPage/google_sign/bloc/auth_bloc.dart';
 import 'package:example_firebase_logical/Screens/HomePage/bloc/home_bloc.dart';
-import 'package:example_firebase_logical/Screens/HomePage/home_page.dart';
 import 'package:example_firebase_logical/main/bloc/main_bloc.dart';
+import 'package:example_firebase_logical/splash/bloc/splash_bloc.dart';
+import 'package:example_firebase_logical/splash/splash_page.dart';
 import 'package:flutter/material.dart';
 // ignore: depend_on_referenced_packages
 import 'package:firebase_core/firebase_core.dart';
@@ -31,9 +32,10 @@ class MyApp extends StatelessWidget {
         BlocProvider(create: (_) => LoginBloc()),
         BlocProvider(create: (_) => SignupBloc()),
         BlocProvider(create: (_) => AuthBloc()),
+        BlocProvider(create: (_) => SplashBloc())
       ],
       child: const MaterialApp(
-        home: HomePage(),
+        home: SplashScreen(),
       ),
     );
   }

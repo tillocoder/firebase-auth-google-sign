@@ -15,6 +15,7 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     final googleSign = GoogleSignIn(
       scopes: [
         'email',
+
       ],
     );
 
@@ -32,11 +33,12 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
       );
       print(userCredential.user);
     } on FirebaseAuthException catch (e) {
+       debugPrint("e.message1111");
       debugPrint(e.message);
-      return null;
+     
     } catch (e, s) {
       debugPrint('$e, $s');
-      return null;
+    
     }
   }
 }

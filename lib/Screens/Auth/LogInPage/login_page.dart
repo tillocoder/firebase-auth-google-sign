@@ -24,17 +24,47 @@ class LoginPage extends StatelessWidget {
             } else {
               return Scaffold(
                 body: Padding(
-                  padding: const EdgeInsets.only(left: 25, right: 25),
+                  padding: const EdgeInsets.only(left: 25, right: 25, top: 25),
                   child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Text('LOGIN', style: TextStyle(fontSize: 30)),
+                      const Text(
+                        'SignIn',
+                        style: TextStyle(
+                          fontSize: 22,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                      const Text(
+                        'Find your best ever meal',
+                        style: TextStyle(color: Colors.grey),
+                      ),
+                      const SizedBox(height: 60),
+                      const Text(
+                        'Email Address',
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
                       TextFormField(
+                        decoration: InputDecoration(
+                          fillColor: Colors.green,
+                          border: OutlineInputBorder(
+                            borderSide: const BorderSide(color: Colors.red),
+                            borderRadius: BorderRadius.circular(15),
+                          ),
+                        ),
                         controller: username,
                       ),
                       const SizedBox(height: 30),
                       TextFormField(
+                        decoration: InputDecoration(
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(15),
+                          ),
+                        ),
                         controller: password,
                       ),
                       const SizedBox(height: 30),
